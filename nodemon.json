@@ -1,0 +1,9 @@
+{
+  "ignore": [".git", "node_modules/**/node_modules", "dist"],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "execMap": {
+    "js": "babel-node"
+  }
+}
