@@ -9,7 +9,7 @@ import boxen from 'boxen'
 import pkg from '../package.json'
 
 const app = express()
-const port = process.env.PORT || 4102
+const port = process.env.PORT || 5200
 const isDev = process.env.NODE_ENV === 'development'
 
 app.use(helmet())
