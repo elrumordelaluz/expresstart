@@ -5,7 +5,6 @@ import compression from 'compression'
 import logger from 'morgan'
 import cors from 'cors'
 import errorhandler from 'errorhandler'
-import boxen from 'boxen'
 import pkg from '../package.json'
 
 const app = express()
@@ -38,7 +37,7 @@ app.listen(port, err => {
 
   console.log(
     isDev
-      ? boxen(
+      ? require('boxen')(
           `>>> ${pkg.name} <<<  
 server running in ${app.get('env')}
 
