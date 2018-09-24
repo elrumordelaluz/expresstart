@@ -25,10 +25,6 @@ app.get('*', (req, res, next) => {
 })
 
 app.use((err, req, res, next) => {
-  if (isDev) {
-    console.log({ err })
-  }
-
   res.status(err.output.statusCode).json(err.output.payload)
 })
 
