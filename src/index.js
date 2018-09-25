@@ -25,7 +25,11 @@ app.get('*', (req, res, next) => {
 })
 
 app.use((err, req, res, next) => {
-  res.status(err.output.statusCode).json(err.output.payload)
+  if (err.isBoom) {
+    res.status(err.output.statusCode).json(err.output.payload)
+  } else {
+    res.status(400).send('Something went wrong')
+  }
 })
 
 app.listen(port, err => {
