@@ -41,8 +41,7 @@ app.listen(port, err => {
           `>>> ${pkg.name} <<<  
 server running in ${app.get('env')}
 
-Visit: http://localhost:${port}
-`,
+Visit: http://localhost:${port}`,
           {
             padding: 1,
             borderColor: 'cyan',
