@@ -11,16 +11,16 @@
     "cors": "2.8.5",
     "errorhandler": "^1.5.1",
     "express": "^4.17.1",
-    "helmet": "^3.21.3",
-    "morgan": "1.9.1"
+    "helmet": "^3.22.0",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.8.6",
-    "@babel/node": "^7.8.4",
-    "@babel/preset-env": "^7.8.6",
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
     "boxen": "^4.2.0",
-    "nodemon": "^2.0.2",
+    "nodemon": "^2.0.4",
     "rimraf": "^3.0.2"
   },
   "scripts": {
