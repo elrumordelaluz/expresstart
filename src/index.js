@@ -11,7 +11,7 @@ const app = express()
 const port = process.env.PORT || 5200
 const isDev = process.env.NODE_ENV === 'development'
 
-app.use(helmet())
+app.use(helmet({ contentSecurityPolicy: false }))
 if (!isDev) app.set('trust proxy', 1)
 app.use(logger(isDev ? 'dev' : 'combined'))
 app.use(compression())
@@ -32,7 +32,7 @@ app.use((err, req, res, next) => {
   }
 })
 
-app.listen(port, err => {
+app.listen(port, (err) => {
   if (err) throw err
 
   console.log(
